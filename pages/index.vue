@@ -3,7 +3,7 @@
     <div>
       <logo />
       <h1 class="title">nuxt-ssr</h1>
-      <h2 class="subtitle">Heroku review app is amazing!!</h2>
+      <h2 class="subtitle">Changed subtitle after opening a PR</h2>
       <div class="links">
         <a href="https://nuxtjs.org/" target="_blank" class="button--green"
           >Documentation</a
