@@ -43,13 +43,23 @@ export default {
   modules: [
     // Doc: https://axios.nuxtjs.org/usage
     '@nuxtjs/axios',
-    '@nuxtjs/pwa'
+    '@nuxtjs/pwa',
+    'nuxt-basic-auth-module'
   ],
   /*
    ** Axios module configuration
    ** See https://axios.nuxtjs.org/options
    */
   axios: {},
+  /*
+   ** Basic auth module configuration
+   ** See https://github.com/potato4d/nuxt-basic-auth-module
+   */
+  basic: {
+    name: process.env.BASIC_AUTH_USER || '',
+    pass: process.env.BASIC_AUTH_PASS || '',
+    enabled: process.env.BASIC_ENABLED === 'true'
+  },
   /*
    ** Build configuration
    */
